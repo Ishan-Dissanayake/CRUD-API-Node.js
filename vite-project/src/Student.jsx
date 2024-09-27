@@ -11,6 +11,17 @@ function Student() {
             .then(res => setStudent(res.data))
             .catch(err => console.log(err));
     }, []);
+    
+    const StudentDelete =async (id) => {
+        try{
+            await axios.delete('http://localhost:8081/student/'+id)
+            window.location.reload()
+        }catch(err){
+            console.log(err);
+        }
+    } 
+
+
 
     return (
         <div className='d-flex vh-100 vw-100 bg-primary justify-content-center align-items-center'>
@@ -32,7 +43,7 @@ function Student() {
                                     <td>{data.semail}</td>
                                     <td>
                                 <Link to={`update/${data.id}`} className='btn btn-primary'>Update</Link>
-                                <button className='btn btn-danger ms-2'>Delete</button>
+                                <button className='btn btn-danger ms-2' onClick={e => StudentDelete(data.id) }>Delete</button>
                             </td>
                                 </tr>
                             ))
