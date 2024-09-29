@@ -29,7 +29,7 @@ function CreateStudent() {
                 </div>
                 <div className='mb-2'>
                 <label htmlFor="">Email</label>
-                <input type="text" placeholder='Enter Name' className='form-control'
+                <input type="text" placeholder='Email' className='form-control'
                 onChange={e => setEmail(e.target.value)}  />
                 </div>
                 <button className='btn btn-success'>Submit</button>
