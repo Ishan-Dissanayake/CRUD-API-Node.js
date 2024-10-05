@@ -64,6 +64,7 @@ app.delete('/student/:id',(req, res)=>{
       if (err) {
           return res.json("Error");
         }
+        console.log(data);
         return res.json(data);
   })
 })
