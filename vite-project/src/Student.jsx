@@ -45,7 +45,7 @@ function Student() {
                                     <td>{data.sname}</td>
                                     <td>{data.semail}</td>
                                     <td>
-                                <Link to={`update/${data.id}`} className='btn btn-primary'>Update</Link>
+                                <Link to={`update/${data.id}`} className='btn btn-primary'>Update Details</Link>
                                 <button className='btn btn-danger ms-2' onClick={e => StudentDelete(data.id) }>Delete</button>
                             </td>
                                 </tr>
