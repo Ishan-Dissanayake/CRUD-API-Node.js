@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
+const jwt = require("jsonwebtoken");
 
 const app = express();
 
@@ -88,6 +89,37 @@ app.post('/student/search', (req, res) => {
   });
 });
 
+
+
+
+const user = [
+  {
+    id:"1",
+    username:"jhon",
+    password:"j123",
+    isAdmin:true,
+  },
+  {
+    id:"2",
+    username:"mama_Ajith",
+    password:"aj88",
+    isAdmin:false,
+  }
+];
+
+
+app.post('/api/login', (req, res) => {
+ const{username,password}=req.body;
+
+ const user = user.find(u=>{
+  return u.username === username && u.password === password;
+ });
+ if(user){
+  const acsessToken = jwt.sign({id: user.id,isAdmin: user.isAdmin}, "mysecretkey")
+ }else{
+  res.status(400).json("User or password incorrect");
+ }
+});
 
 
 app.listen(8081, () => {
