@@ -6,7 +6,7 @@ const generateNextId = async (store_name) => {
   // Get the first two letters of the store_name
   const prefix = store_name.substring(0, 2).toLowerCase(); // Ensure it’s in lowercase
 
-  // Query to get the maximum sale_id from the sales table
+  // Query to get the maximum sale_id from the sales tabl
   const query = "SELECT sale_id FROM sales";
   const [results] = await db.query(query);
 
