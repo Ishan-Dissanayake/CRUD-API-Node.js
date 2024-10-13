@@ -69,6 +69,21 @@ app.delete('/student/:id',(req, res)=>{
   })
 })
 
+app.post('/student/search', (req, res) => {
+  const sql = "SELECT * FROM student WHERE sname = ?";
+  
+  const Name = req.body.sname; 
+  
+  db.query(sql, [Name], (err, data) => {
+    if (err) {
+      return res.json("Error");
+    }
+    console.log(data);
+    return res.json(data);
+  });
+});
+
+
 
 app.listen(8081, () => {
   console.log("listening");
