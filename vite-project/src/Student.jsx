@@ -3,8 +3,8 @@ import axios from 'axios';
 import { Link } from 'react-router-dom'
 
 function Student() {
- 
-    const [student, setStudent] =useState([])
+
+    const [student, setStudent] =useState([]) 
     useEffect(() => {
        
         axios.get('http://localhost:8081/')
@@ -19,10 +19,10 @@ function Student() {
         }catch(err){
             console.log(err);
         }
-    } 
+    }
 
 
-
+//home
     return (
         <div className='d-flex vh-100 vw-100 bg-primary justify-content-center align-items-center'>
           
