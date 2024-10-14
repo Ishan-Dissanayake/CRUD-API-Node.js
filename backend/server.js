@@ -69,6 +69,7 @@ app.delete('/student/:id',(req, res)=>{
   })
 })
 
+//search student details by name
 app.post('/student/search', (req, res) => {
   const sql = "SELECT * FROM student WHERE sname = ?";
   
