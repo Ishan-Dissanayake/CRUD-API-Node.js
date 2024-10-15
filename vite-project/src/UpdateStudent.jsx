@@ -23,7 +23,7 @@ function UpdateStudent() {
             <form onSubmit={handleSubmit}>
                 <h2>Add Student</h2>
                 <div className='mb-2'>
-                    <label htmlFor="">Name</label>
+                    <label htmlFor="">Student Name</label>
                     <input type="text" placeholder='Enter Name' className='form-control'
                     onChange={e => setName(e.target.value)} />
                 
