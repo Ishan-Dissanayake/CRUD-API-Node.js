@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
   });
 });
 
+//
 app.post('/create',(req, res)=>{
 
     const sql="Insert into student (`sname`,`semail`) VALUES (?)";
@@ -55,6 +56,7 @@ app.put('/update/:id',(req, res)=>{
   })
 })
 
+//delete student by id
 app.delete('/student/:id',(req, res)=>{
 
   const sql="DELETE FROM student WHERE id= ?";
