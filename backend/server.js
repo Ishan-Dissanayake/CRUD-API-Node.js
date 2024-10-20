@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   });
 });
 
-//
+//creat Function
 app.post('/create',(req, res)=>{
 
     const sql="Insert into student (`sname`,`semail`) VALUES (?)";
