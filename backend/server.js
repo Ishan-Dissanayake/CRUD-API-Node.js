@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   });
 });
 
-//creat Function
+//creat Function 
 app.post('/create',(req, res)=>{
 
     const sql="Insert into student (`sname`,`semail`) VALUES (?)";
@@ -40,6 +40,8 @@ app.post('/create',(req, res)=>{
           return res.json(data);
     })
 })
+
+//update student by id
 app.put('/update/:id',(req, res)=>{
 
   const sql="update student set 'sname' = ?, 'semail'= ? where id= ?";
