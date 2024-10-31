@@ -107,7 +107,7 @@ const user = [
   }
 ];
 //sdaaassaa
-
+//as
 app.post('/api/login', (req, res) => {
  const{username,password}=req.body;
 
@@ -116,7 +116,12 @@ app.post('/api/login', (req, res) => {
  });
  if(user){
   const acsessToken = jwt.sign({id: user.id,isAdmin: user.isAdmin}, "mysecretkey")
- }else{
+  res.json({
+    username:user.username,
+    isAdmin:user,isAdmin,
+    acsessToken
+  })
+}else{
   res.status(400).json("User or password incorrect");
  }
 });
