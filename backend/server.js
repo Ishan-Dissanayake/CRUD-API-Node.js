@@ -58,7 +58,7 @@ app.put('/update/:id',(req, res)=>{
   })
 })
 
-//delete student by id
+//delete
 app.delete('/student/:id',(req, res)=>{
 
   const sql="DELETE FROM student WHERE id= ?";
