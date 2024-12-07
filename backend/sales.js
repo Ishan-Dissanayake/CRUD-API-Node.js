@@ -15,7 +15,7 @@ const generateNextId = async (store_name) => {
     return `${prefix}0001`;
   }
 
-  // Convert sale_id to string and extract the numeric part
+  // Convert sale_id to string and extract the_numeric_part
   const ids = results.map(sale => parseInt(sale.sale_id.slice(2))); // Skip the first 2 characters (prefix)
 
   // Get the maximum ID
