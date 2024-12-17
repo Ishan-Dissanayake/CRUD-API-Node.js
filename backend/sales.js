@@ -10,7 +10,7 @@ const generateNextId = async (store_name) => {
   const query = "SELECT sale_id FROM sales";
   const [results] = await db.query(query);
 
-  // If there are no sales in the database, return the first ID for the user
+  // If there are no sales in the database, return the first ID for the user sdk
   if (results.length === 0) {
     return `${prefix}0001`;
   }
