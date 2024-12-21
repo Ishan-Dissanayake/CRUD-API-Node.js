@@ -21,7 +21,7 @@ const generateNextId = async (store_name) => {
   // Get the maximum ID
   const maxId = Math.max(...ids);
 
-  // Generate the next ID by incrementing the maxId and padding it to 4 digits
+  // Generate the next ID  by incrementing the maxId and padding it to 4 digits
   return `${prefix}${(maxId + 1).toString().padStart(4, "0")}`;
 };
 
