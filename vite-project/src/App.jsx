@@ -3,6 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
 import Student from './Student.jsx'
+import LoginPage from './LoginPage.jsx'
 import React from 'react';
 import CreateStudent from './CreateStudent.jsx';
 import UpdateStudent from './UpdateStudent.jsx';
@@ -10,13 +11,15 @@ import UpdateStudent from './UpdateStudent.jsx';
 
 
 function App() {
+  //comment
   //const [count, setCount] = useState(0)
 
   return (
     <div className="App">
 <BrowserRouter>
 <Routes>
-  <Route path='/' element={<Student />}></Route>
+  <Route path='/' element={<LoginPage />}></Route>
+  <Route path='/student' element={<Student />}></Route>
   <Route path='/create' element={<CreateStudent />}></Route>
   <Route path='/update/:id' element={<UpdateStudent />}></Route>
 </Routes>
