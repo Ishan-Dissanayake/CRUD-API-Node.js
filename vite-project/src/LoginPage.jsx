@@ -14,7 +14,7 @@ function LoginPage() {
             navigate('/student');
         }).catch(err => console.log(err));
     }
-    
+   //ssa 
     
     return (
         <div style={styles.container}>
