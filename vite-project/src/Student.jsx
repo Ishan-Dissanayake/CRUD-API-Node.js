@@ -22,7 +22,7 @@ function Student() {
     }
 
 
-//home sxsssasss
+//home sxsssasssa
     return (
         <div className='d-flex vh-100 vw-100 bg-primary justify-content-center align-items-center'>
           
