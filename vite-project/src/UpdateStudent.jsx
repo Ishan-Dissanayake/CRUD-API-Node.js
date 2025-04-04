@@ -16,7 +16,7 @@ function UpdateStudent() {
             navigate('/');
         }).catch(err => console.log(err));
     }
-//ssasqwcffddfevrrfvvrfvgfv vfvsd
+//ssasqwcffddfevrrfvvrfvgfv vfvsda
   return (
     <div className='d-flex vh-100 vw-100 bg-primary justify-content-center align-items-center'>
         <div className='w-50 bg-white rounded p-3'>
