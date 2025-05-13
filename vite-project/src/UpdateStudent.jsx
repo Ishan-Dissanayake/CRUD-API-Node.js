@@ -16,7 +16,7 @@ function UpdateStudent() {
             navigate('/');
         }).catch(err => console.log(err));
     }
-//scddscasqwccffddfffcggswfvvccsecddcdcecewddd
+//scddscasqwccffddfffcggswfvvccsecddcdcecewdddsd
 // esdfvrrfvdccvrsccdfvgfvavcvsvfvsvddasdagggssasssashdasdsasfassaaccaxsssasassdbvhnsassddwsswdwdsassfggrrrr4wwddvvgg
   return (
     <div className='d-flex vh-100 vw-100 bg-primary justify-content-center align-items-center'>
