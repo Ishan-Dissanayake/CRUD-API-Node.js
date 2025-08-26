@@ -22,7 +22,8 @@ function Student() {
     }
 
 //xdssdsdsdsdsdsd
-//home sxsssweawewewesswesdsdfdsdfdsaasfaasdsawdfdfeewtesdweszssdsdzxxssweewsaaaewtttttsasasssaxcsasawesasaszxqaxcsaaszxzzxcxxcxczxcfger
+//home sxsssweawewewesswesdsdfdsdfdsaasfaasdsawdfdfeewtesdweszssdsd
+// sdfsdfzxxssweewsaaaewtttttsasasssaxcsasawesasaszxqaxcsaaszxzzxcxxcxczxcfger
     return (
         <div className='d-flex vh-100 vw-100 bg-primary justify-content-center align-items-center'>
           
